@@ -49,7 +49,7 @@ class ViewController: UIViewController, UICloudSharingControllerDelegate {
         let cloudSharingController: UICloudSharingController = UICloudSharingController{ controller,
             preparationCompletionHandler in
             
-            let share: CKShare = CKShare(rootRecord: newRecord)
+            let share = CKShare(rootRecord: newRecord)
             share[CKShareTitleKey] = "hello" as CKRecordValue?
             
             
